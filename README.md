@@ -45,7 +45,8 @@ stock-prediction-project/
 ├── reports/          ← Auto-generated charts + CSV
 ├── requirements.txt
 ├── README.md
-└── main.py           ← Run full pipeline
+├── main.py  ← Run full pipeline
+└── app.py   ← Run streamlit app
 ```
 
 ---
@@ -87,7 +88,7 @@ Thời gian: 2020-01-01 → 2026-01-01
 pip install -r requirements.txt
 ```
 
-### 2. Chạy notebook (khuyến nghị)
+### 2. Chạy notebook 
 
 ```bash
 cd notebooks
@@ -100,7 +101,7 @@ jupyter notebook Stock_Prediction_Models.ipynb
 python main.py
 ```
 
-### 3. Hoặc chạy streamlit app
+### 4. Hoặc chạy streamlit app
 
 ```bash
 streamlit run app.py

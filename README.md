@@ -62,7 +62,7 @@ stock-prediction-project/
 
 ### Linear Regression
 - Baseline model
-- Input: 60-day look-back window (flattened)
+- Input: 20-day look-back window (flattened)
 
 ---
 
@@ -75,7 +75,7 @@ stock-prediction-project/
 | HPG.VN | Hòa Phát Group |
 
 Nguồn: Yahoo Finance (`yfinance`)  
-Thời gian: 2020-01-01 → 2025-01-01
+Thời gian: 2020-01-01 → 2026-01-01
 
 ---
 
@@ -98,6 +98,12 @@ jupyter notebook Stock_Prediction_Models.ipynb
 
 ```bash
 python main.py
+```
+
+### 3. Hoặc chạy streamlit app
+
+```bash
+streamlit run app.py
 ```
 
 ---
@@ -123,8 +129,8 @@ Sau khi chạy, các file được tạo trong `reports/`:
 
 | Rank | Model | RMSE | MAE | MAPE (%) |
 |------|-------|------|-----|----------|
-| 1 | LSTM | ~2.3 | ~1.8 | ~2.1 |
-| 2 | GRU | ~2.5 | ~2.0 | ~2.3 |
-| 3 | Linear | ~4.8 | ~3.9 | ~4.5 |
+| 1 | Linear | ~2271 | ~1698 | ~1.65 |
+| 2 | GRU | ~6711 | ~5351 | ~4.85 |
+| 3 | LSTM | ~15591 | ~13988 | ~12.76 |
 
 > Kết quả thực tế sẽ khác tùy dữ liệu và lần train.
